@@ -1,0 +1,346 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.wrapper {
+    background-color: white!important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;  
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background-color: white!important;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.radio-inline {
+    margin-right: 2%;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+
+#sidebar {
+    min-width: 350px;
+    max-width: 350px;
+    background: #fff;
+    color: #610D02!important;
+    transition: all 0.2s cubic-bezier(0, 0.020, 0.0, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left: -350px;
+    transform: rotateY(100deg);
+    
+}
+
+#sidebar .sidebar-header {
+    padding: 35px 0px 0px 0px;
+    background: white;
+    color: #610D02;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding: 10px 20px 10px 20px;
+    margin-top: 40px;
+    
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px;
+    font-size: 0.8em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #F3E19F;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #F3E19F;
+    border-radius: 3px;
+    border:none;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-outline-main {
+    color: #610D02;
+    background-color: transparent;
+    border-color: #610D02;
+}
+
+.btn-outline-main:hover {
+    color: #f4f4f4;
+    background-color: #610D02;
+}
+
+.btn-ico {
+    font-size: 12x;
+}
+
+.img-logo {
+    width: 200px;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.main-navs {
+     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+} 
+
+.navs li{
+    padding: 0px 20px!important;
+}
+
+#content {
+    width: 100%;
+    /* diisi */
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #610D02;
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+
+/* KONTEN */
+
+/* CARD MAIN KONTEN */
+
+@media (min-width: 320px) { 
+    .navbar-toggler span {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .navs li{
+        padding: 5px 2px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .navbar-toggler span {
+        font-size: 14px;
+        float: left!important;
+    }
+    
+    .hide-search-on-sm {
+        display: none;
+    }
+
+    .form-search {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 425px) { 
+    .navbar-toggler span {
+        font-size: 12px
+    }
+
+    .navs li{
+        padding: 5px 2px;
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .navbar-toggler span {
+        font-size: 12px;
+        float: left!important;
+    }
+    
+    .form-search {
+        font-size: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .card{
+        width: 100%;
+    }
+
+    .hidden {
+        display: none
+    }
+
+    .navs li{
+        padding: 5px 2px;
+        font-size: 12px;
+    }
+
+    .navbar-toggler span {
+        font-size: 12px;
+        float: right!important;
+    }
+
+    .hide-on-xs {
+        display: none!important;
+    }
+    
+    .form-search {
+        font-size: 10px;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .navs li{
+        padding: 0px 20px 0px 0px!important;
+    }
+
+    .hide-on-xs {
+        display: none;
+    }
+
+    .hide-search-on-sm {
+        display: none;
+    }
+
+    .form-search {
+        font-size: 11px;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navs li{
+        font-size: 14px;
+        padding: 0px 30px 0px 0px!important;
+    }
+
+    .hide-on-sm {
+        display: none;
+    }
+    
+    .hide-on-xs {
+        display: none;
+    }
+
+    .card{
+        margin-left: 17%;
+        width: 65%;
+        margin-bottom: 50px;
+    }
+
+    .card-img-top {
+        width: 800px; height: 350px; padding: 0px 20px 0px 20px
+    }
+
+    .card-edit-profile {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .img-logo {
+        margin-left: 3%; width: 350px;
+    }
+}
+ 
